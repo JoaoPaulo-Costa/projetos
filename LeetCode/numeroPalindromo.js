@@ -26,6 +26,7 @@ function ehPalindromos(numero){
             return false;
         }
     }
+    console.log('');
     console.log(numm)
     return true;    
 }
