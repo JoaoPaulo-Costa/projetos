@@ -3,27 +3,24 @@
 
 let strings = [];
 
-// function prefixoMaisLongo(strings) {
-//     maximo = [];
-//     for(let i = 0; i < strings.length; i++){
-//         maximo[i] = strings[i].length;              
+// function prefixoMaisLongo(strings) {  
+//     strings.sort(); // arranja as strings em ordem alfabética
+//     console.log(strings);
+//     console.log(strings[0][2]);
+//     for (let i = 0; i < strings[0].length; i++){ // compara o primeiro com o último, pois os outros já vão ter correlação de qualquer forma
+//         if(strings[0][i] !== strings[strings.length - 1][i]) return strings[0].substr(0, i);
+                
 //     }
-//     // return Math.max(...maximo);
-//     for (let j = 0; j < Math.max(...maximo); j++){
-//         for (let a = 1; a < Math.max(...maximo); a++){
-//             i
-//         }
-
-//     }
-//     strings.every()
+//     return strings[0];
 // }
 
-function prefixoMaisLongo(strings){
-    strings.sort();
+function prefixoMaisLongo(strings) {  
+    //strings.sort(); // arranja as strings em ordem alfabética
     console.log(strings);
     console.log(strings[0][2]);
-    for( let i = 0; i < strings[0].length; i++){
-        if( strings[0][i] !== strings[strings.length - 1][i]) return strings[0].substr(0, i);
+    for (let i = 0; i < strings[0].length; i++){ // compara o primeiro com o último, pois os outros já vão ter correlação de qualquer forma
+        if(strings[0][i] !== strings[strings.length - 1][i]) return strings[0].substr(0, i);
+                
     }
     return strings[0];
 }
