@@ -21,8 +21,8 @@ function isValid(s) {
         else if(s[i] == '('){
             stack.push(')');
         }
-        else if(stack.pop() !== s[i]){
-            return false;
+        else if(s[0] === '(' && stack.push() === ')'){
+            return true;
         }
         //return !stack.length;
         return stack.length === 0;
