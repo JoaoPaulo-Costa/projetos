@@ -4,20 +4,6 @@
 let numeros = [];
 let target = 0;
 
-function searchInserts(numeros, target) {
-    for(i = 0; i < numeros.length; i++) {
-        if(target > numeros[numeros.length]) {
-            return (target - numeros[numeros.length]) + numeros.length;
-        }
-        if(numeros[i] === target){
-            return numeros.indexOf(numeros[i]);
-        }
-        if(numeros[i] > target){
-            return numeros.indexOf(numeros[i-1]) + 1;
-        }
-    }
-}
-
 function searchInsert(numeros, target) {
 
     let lo = 0, hi = numeros.length;
